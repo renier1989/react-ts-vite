@@ -11,7 +11,7 @@ export const Counter = () => {
   return (
     <>
       <div className="my-5">
-        <h2 className=" text-xl">useState Section</h2>
+        {/* <h2 className=" text-xl">useState Section</h2> */}
         <span>Counter : <span className="text-2xl"> {counter}</span> </span>
         <br />
         <div className="flex mt-4 gap-3">
