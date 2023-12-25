@@ -1,10 +1,7 @@
 import { Counter } from "./components/Counter";
 import { CounterReducer } from "./components/CounterReducer";
 import { Formulario } from "./components/Formulario";
-<<<<<<< HEAD
-=======
-import { Formulario } from "./components/Formulario";
->>>>>>> edcecd012eabad9f0965fdd556006996db732a98
+import { Formulario2 } from "./components/Formulario2";
 import { TimerPadre } from "./components/TimerPadre";
 import { Usuario } from "./components/Usuario";
 
@@ -32,6 +29,8 @@ function App() {
       <h2 className="text-2xl mt-4">Hook CustomHooks:</h2>
       <div className="border px-5 mt-2 mb-6 rounded-md shadow-slate-800 shadow-lg py-5">
         <Formulario/>
+        <hr />
+        <Formulario2/>
       </div>
 
     </>

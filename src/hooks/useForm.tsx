@@ -1,6 +1,9 @@
 import { ChangeEvent, useState } from "react";
 
-export const useForm = (target:any) =>{
+// para indicar que es tipo generico. se le asigna el <T>
+// del lado donde se declara el useForm se le pude tambien espedificar una interface que me ayude ver mejor las propiedad que posee internamente.
+export function useForm<T>(target:T){
+// export const useForm = (target:any) =>{
     const [formulario, setformulario] = useState(target);
     
       // como estoy trabajando con elemenetos de un formulario utilizo este tipodo del ChangeEvent<HTMLImputElement>
@@ -18,6 +21,7 @@ export const useForm = (target:any) =>{
 
       return {
         formulario,
-        handleChange
+        handleChange,
+        ...formulario , // esto es par desestructurar los campos que se le estan pasando de una vez.
       }
 }
